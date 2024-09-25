@@ -73,7 +73,6 @@ Ensure that Webots is installed and properly configured on your system. You can 
 ### 2. Clone the Repository
 Clone this repository to your local machine:
 
-```bash
 git clone https://github.com/your-repository/project6-webots.git
 cd project6-webots
 
