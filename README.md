@@ -121,17 +121,3 @@ Once you have built the executables:
 
 - Run the **exploration controller** inside Webots by attaching the generated `exploration_controller` executable to your robot in the world.
 - Run the **supervisor controller** similarly for overseeing the environment.
-
----
-
-## Contributing
-
-Feel free to contribute to this project by forking the repository, making changes, and submitting a pull request. Any improvements or suggestions are welcome!
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
