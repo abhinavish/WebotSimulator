@@ -64,6 +64,8 @@ This project requires the following dependencies:
 - **JsonCpp**: A C++ library for interacting with JSON files. Install it with:
   ```bash
   sudo apt-get install libjsoncpp-dev
+  ```
+  
 
 ## Setup and Build Instructions
 
@@ -73,8 +75,8 @@ Ensure that Webots is installed and properly configured on your system. You can 
 ### 2. Clone the Repository
 Clone this repository to your local machine:
 
-git clone https://github.com/your-repository/project6-webots.git
-cd project6-webots
+git clone https://github.com/your-repository/WebotSimulator.git
+cd WebotSimulator
 
 ## Build the Project
 
