@@ -4,39 +4,31 @@ This project contains the C++ implementation of two controllers for robot explor
 
 ## Project Structure
 
-controllers/
-│
-├── exploration_controller/
-│   ├── include/                   # Header files for the exploration controller
-│   │   ├── exploration.hpp
-│   │   ├── grid.hpp
-│   │   ├── gui.hpp
-│   │   ├── robot_sim.hpp
-│   │   ├── utils.hpp
-│   ├── src/                       # Source files for the exploration controller
-│   │   ├── exploration_controller.cpp
-│   │   ├── exploration.cpp
-│   │   ├── generate_noise.cpp
-│   │   ├── geometry.cpp
-│   │   ├── grid.cpp
-│   │   ├── gui.cpp
-│   │   ├── robot_gui.cpp
-│   │   ├── robot.cpp
-│   │   ├── utils.cpp
-│
-├── supervisor_controller/         # Source for supervisor controller
-│   ├── supervisor_controller.cpp
-│
-├── worlds/                        # Webots world files
-│   ├── maze1.wbt
-│   ├── maze2.wbt
-│   ├── maze3.wbt
-│   ├── .maze1.jpg
-│   ├── .maze2.jpg
-│   ├── .maze3.jpg
-│
-├── CMakeLists.txt                 # CMake configuration file for building the project
-└── README.md                      # This README file
+- **controllers/**
+  - **exploration_controller/**
+    - **include/**
+      - exploration.hpp
+      - grid.hpp
+      - gui.hpp
+      - robot_sim.hpp
+      - utils.hpp
+    - **src/**
+      - exploration_controller.cpp
+      - exploration.cpp
+      - generate_noise.cpp
+      - geometry.cpp
+      - grid.cpp
+      - gui.cpp
+      - robot_gui.cpp
+      - robot.cpp
+      - utils.cpp
+  - **supervisor_controller/**
+    - supervisor_controller.cpp
+  - **worlds/**
+    - maze1.wbt
+    - maze2.wbt
+    - maze3.wbt
+
 
 ## Key Components
 
@@ -72,4 +64,75 @@ This project requires the following dependencies:
 - **JsonCpp**: A C++ library for interacting with JSON files. Install it with:
   ```bash
   sudo apt-get install libjsoncpp-dev
+
+## Setup and Build Instructions
+
+### 1. Install Webots
+Ensure that Webots is installed and properly configured on your system. You can download it [here](https://cyberbotics.com/).
+
+### 2. Clone the Repository
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-repository/project6-webots.git
+cd project6-webots
+
+## Build the Project
+
+The project uses CMake to manage the build process.
+
+### Step-by-Step Instructions:
+
+1. **Create a build directory and navigate into it**:
+
+    ```bash
+    mkdir build
+    cd build
+    ```
+
+2. **Run the CMake configuration**:
+
+    ```bash
+    cmake ..
+    ```
+
+3. **Build the project**:
+
+    ```bash
+    make
+    ```
+
+    The executables for the controllers will be created (`exploration_controller` and `supervisor_controller`).
+
+---
+
+## Run the Simulation
+
+### 1. **Run the Exploration Controller**
+To run the exploration controller in Webots, open one of the world files (e.g., `maze1.wbt`) in the Webots simulator, and attach the `exploration_controller` to the robot.
+
+### 2. **Run the Supervisor Controller**
+Similarly, for the supervisor controller, attach `supervisor_controller` to the supervisor node.
+
+---
+
+## Run the Controllers
+
+Once you have built the executables:
+
+- Run the **exploration controller** inside Webots by attaching the generated `exploration_controller` executable to your robot in the world.
+- Run the **supervisor controller** similarly for overseeing the environment.
+
+---
+
+## Contributing
+
+Feel free to contribute to this project by forking the repository, making changes, and submitting a pull request. Any improvements or suggestions are welcome!
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
