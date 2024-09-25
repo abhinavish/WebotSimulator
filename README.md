@@ -1,5 +1,7 @@
 # Webots Robot Exploration & Supervisor - C++ Implementation
 
+![Project Screenshot](./webot.jpeg)
+
 This project contains the C++ implementation of two controllers for robot exploration and supervision in Webots. It simulates a robot navigating a maze-like environment, with the exploration controller guiding the robot's movements and the supervisor controller generating and managing the map of the environment.
 
 ## Project Structure
